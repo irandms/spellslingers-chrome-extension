@@ -1,0 +1,13 @@
+{
+    "name": "Spelltable Log Scraper",
+    "description": "Automatic data collection by scraping Spelltable's Game Log",
+    "version": "0.1",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://spelltable.wizards.com/game/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": ["storage", "activeTab", "scripting", "desktopCapture"]
+}
